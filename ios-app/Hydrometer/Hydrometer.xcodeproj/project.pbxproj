@@ -1,0 +1,809 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E764042A306057C80078979A /* HydrationInsights.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7640428306057C80078979A /* HydrationInsights.swift */; };
+		E764042B306057C80078979A /* InsightsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7640429306057C80078979A /* InsightsView.swift */; };
+		E764042E306059C40078979A /* CapHealthBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764042D306059C40078979A /* CapHealthBanner.swift */; };
+		E764042F306059C40078979A /* CapAlerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764042C306059C40078979A /* CapAlerts.swift */; };
+		E764043130605E810078979A /* BottleLevelCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043030605E810078979A /* BottleLevelCard.swift */; };
+		E7640434306061100078979A /* Friend.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7640432306061100078979A /* Friend.swift */; };
+		E7640435306061100078979A /* FriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7640433306061100078979A /* FriendsView.swift */; };
+		E764043930609DA10078979A /* BottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043630609DA10078979A /* BottleView.swift */; };
+		E764043A30609DA10078979A /* HomeStrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043730609DA10078979A /* HomeStrips.swift */; };
+		E764043B30609DA10078979A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043830609DA10078979A /* MainTabView.swift */; };
+		E764043F3060C2E00078979A /* GrowingTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043D3060C2E00078979A /* GrowingTreeView.swift */; };
+		E76404403060C2E00078979A /* TreeGrowth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043E3060C2E00078979A /* TreeGrowth.swift */; };
+		E76404413060C2E00078979A /* GardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043C3060C2E00078979A /* GardenView.swift */; };
+		E7BAA5B7305E5520002EF408 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A6305E5520002EF408 /* DashboardViewModel.swift */; };
+		E7BAA5B8305E5520002EF408 /* SimulatorPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AC305E5520002EF408 /* SimulatorPanelView.swift */; };
+		E7BAA5B9305E5520002EF408 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AA305E5520002EF408 /* ProgressRingView.swift */; };
+		E7BAA5BA305E5520002EF408 /* SmartCapProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A1305E5520002EF408 /* SmartCapProtocol.swift */; };
+		E7BAA5BB305E5520002EF408 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AF305E5520002EF408 /* DashboardView.swift */; };
+		E7BAA5BC305E5520002EF408 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A4305E5520002EF408 /* Formatting.swift */; };
+		E7BAA5BD305E5520002EF408 /* StreakBadgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AD305E5520002EF408 /* StreakBadgeView.swift */; };
+		E7BAA5BE305E5520002EF408 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5B2305E5520002EF408 /* SettingsView.swift */; };
+		E7BAA5BF305E5520002EF408 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA594305E5520002EF408 /* RootView.swift */; };
+		E7BAA5C0305E5520002EF408 /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA59A305E5520002EF408 /* UserProfile.swift */; };
+		E7BAA5C1305E5520002EF408 /* StreakRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA599305E5520002EF408 /* StreakRecord.swift */; };
+		E7BAA5C2305E5520002EF408 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5B0305E5520002EF408 /* HistoryView.swift */; };
+		E7BAA5C3305E5520002EF408 /* CapStatusIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A8305E5520002EF408 /* CapStatusIndicator.swift */; };
+		E7BAA5C4305E5520002EF408 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5B3305E5520002EF408 /* SignInView.swift */; };
+		E7BAA5C5305E5520002EF408 /* SmartCapManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A0305E5520002EF408 /* SmartCapManager.swift */; };
+		E7BAA5C6305E5520002EF408 /* StreakEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA597305E5520002EF408 /* StreakEngine.swift */; };
+		E7BAA5C7305E5520002EF408 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA59D305E5520002EF408 /* AuthService.swift */; };
+		E7BAA5C8305E5520002EF408 /* WaterLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA59B305E5520002EF408 /* WaterLog.swift */; };
+		E7BAA5C9305E5520002EF408 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5B1305E5520002EF408 /* OnboardingView.swift */; };
+		E7BAA5CA305E5520002EF408 /* HydrationGoalCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA596305E5520002EF408 /* HydrationGoalCalculator.swift */; };
+		E7BAA5CB305E5520002EF408 /* HydrometerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA593305E5520002EF408 /* HydrometerApp.swift */; };
+		E7BAA5CC305E5520002EF408 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA59E305E5520002EF408 /* KeychainHelper.swift */; };
+		E7BAA5CD305E5520002EF408 /* QuickAddBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AB305E5520002EF408 /* QuickAddBar.swift */; };
+		E7BAA5CE305E5520002EF408 /* LogRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A9305E5520002EF408 /* LogRowView.swift */; };
+		E7BAA5D3305F126C002EF408 /* ReminderSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D2305F126C002EF408 /* ReminderSettingsView.swift */; };
+		E7BAA5D4305F126C002EF408 /* ReminderPlanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D0305F126C002EF408 /* ReminderPlanner.swift */; };
+		E7BAA5D5305F126C002EF408 /* ReminderScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D1305F126C002EF408 /* ReminderScheduler.swift */; };
+		E7BAA5D8305F2052002EF408 /* WaterBottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5D7305F2052002EF408 /* WaterBottleView.swift */; };
+		E7BAA5E0305F2977002EF408 /* ShopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DE305F2977002EF408 /* ShopView.swift */; };
+		E7BAA5E1305F2977002EF408 /* CoinRewardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DB305F2977002EF408 /* CoinRewardView.swift */; };
+		E7BAA5E2305F2977002EF408 /* CoinSoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DC305F2977002EF408 /* CoinSoundPlayer.swift */; };
+		E7BAA5E3305F2977002EF408 /* Cosmetics.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DD305F2977002EF408 /* Cosmetics.swift */; };
+		E7BAA5E4305F2977002EF408 /* CoinRewards.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DA305F2977002EF408 /* CoinRewards.swift */; };
+		E7BAA5E5305F2977002EF408 /* WeekStripView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5DF305F2977002EF408 /* WeekStripView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E7BAA579305E546E002EF408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7BAA563305E546D002EF408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7BAA56A305E546D002EF408;
+			remoteInfo = Hydrometer;
+		};
+		E7BAA583305E546E002EF408 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E7BAA563305E546D002EF408 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E7BAA56A305E546D002EF408;
+			remoteInfo = Hydrometer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E7640428306057C80078979A /* HydrationInsights.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationInsights.swift; sourceTree = "<group>"; };
+		E7640429306057C80078979A /* InsightsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsightsView.swift; sourceTree = "<group>"; };
+		E764042C306059C40078979A /* CapAlerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapAlerts.swift; sourceTree = "<group>"; };
+		E764042D306059C40078979A /* CapHealthBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapHealthBanner.swift; sourceTree = "<group>"; };
+		E764043030605E810078979A /* BottleLevelCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleLevelCard.swift; sourceTree = "<group>"; };
+		E7640432306061100078979A /* Friend.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friend.swift; sourceTree = "<group>"; };
+		E7640433306061100078979A /* FriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsView.swift; sourceTree = "<group>"; };
+		E764043630609DA10078979A /* BottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleView.swift; sourceTree = "<group>"; };
+		E764043730609DA10078979A /* HomeStrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrips.swift; sourceTree = "<group>"; };
+		E764043830609DA10078979A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E764043C3060C2E00078979A /* GardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenView.swift; sourceTree = "<group>"; };
+		E764043D3060C2E00078979A /* GrowingTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTreeView.swift; sourceTree = "<group>"; };
+		E764043E3060C2E00078979A /* TreeGrowth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGrowth.swift; sourceTree = "<group>"; };
+		E7BAA56B305E546D002EF408 /* Hydrometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydrometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BAA578305E546E002EF408 /* HydrometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BAA582305E546E002EF408 /* HydrometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BAA593305E5520002EF408 /* HydrometerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrometerApp.swift; sourceTree = "<group>"; };
+		E7BAA594305E5520002EF408 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		E7BAA596305E5520002EF408 /* HydrationGoalCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HydrationGoalCalculator.swift; sourceTree = "<group>"; };
+		E7BAA597305E5520002EF408 /* StreakEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakEngine.swift; sourceTree = "<group>"; };
+		E7BAA599305E5520002EF408 /* StreakRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakRecord.swift; sourceTree = "<group>"; };
+		E7BAA59A305E5520002EF408 /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		E7BAA59B305E5520002EF408 /* WaterLog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterLog.swift; sourceTree = "<group>"; };
+		E7BAA59D305E5520002EF408 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		E7BAA59E305E5520002EF408 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		E7BAA5A0305E5520002EF408 /* SmartCapManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCapManager.swift; sourceTree = "<group>"; };
+		E7BAA5A1305E5520002EF408 /* SmartCapProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartCapProtocol.swift; sourceTree = "<group>"; };
+		E7BAA5A4305E5520002EF408 /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		E7BAA5A6305E5520002EF408 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		E7BAA5A8305E5520002EF408 /* CapStatusIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapStatusIndicator.swift; sourceTree = "<group>"; };
+		E7BAA5A9305E5520002EF408 /* LogRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogRowView.swift; sourceTree = "<group>"; };
+		E7BAA5AA305E5520002EF408 /* ProgressRingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressRingView.swift; sourceTree = "<group>"; };
+		E7BAA5AB305E5520002EF408 /* QuickAddBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuickAddBar.swift; sourceTree = "<group>"; };
+		E7BAA5AC305E5520002EF408 /* SimulatorPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimulatorPanelView.swift; sourceTree = "<group>"; };
+		E7BAA5AD305E5520002EF408 /* StreakBadgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakBadgeView.swift; sourceTree = "<group>"; };
+		E7BAA5AF305E5520002EF408 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		E7BAA5B0305E5520002EF408 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		E7BAA5B1305E5520002EF408 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		E7BAA5B2305E5520002EF408 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		E7BAA5B3305E5520002EF408 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		E7BAA5CF305E562A002EF408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E7BAA5D0305F126C002EF408 /* ReminderPlanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderPlanner.swift; sourceTree = "<group>"; };
+		E7BAA5D1305F126C002EF408 /* ReminderScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderScheduler.swift; sourceTree = "<group>"; };
+		E7BAA5D2305F126C002EF408 /* ReminderSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderSettingsView.swift; sourceTree = "<group>"; };
+		E7BAA5D7305F2052002EF408 /* WaterBottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBottleView.swift; sourceTree = "<group>"; };
+		E7BAA5DA305F2977002EF408 /* CoinRewards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRewards.swift; sourceTree = "<group>"; };
+		E7BAA5DB305F2977002EF408 /* CoinRewardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRewardView.swift; sourceTree = "<group>"; };
+		E7BAA5DC305F2977002EF408 /* CoinSoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinSoundPlayer.swift; sourceTree = "<group>"; };
+		E7BAA5DD305F2977002EF408 /* Cosmetics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cosmetics.swift; sourceTree = "<group>"; };
+		E7BAA5DE305F2977002EF408 /* ShopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopView.swift; sourceTree = "<group>"; };
+		E7BAA5DF305F2977002EF408 /* WeekStripView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeekStripView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E7BAA568305E546D002EF408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E7BAA575305E546E002EF408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		E7BAA57F305E546E002EF408 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E7BAA562305E546D002EF408 = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5B6305E5520002EF408 /* Hydrometer */,
+				E7BAA56C305E546D002EF408 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E7BAA56C305E546D002EF408 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA56B305E546D002EF408 /* Hydrometer.app */,
+				E7BAA578305E546E002EF408 /* HydrometerTests.xctest */,
+				E7BAA582305E546E002EF408 /* HydrometerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E7BAA595305E5520002EF408 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA593305E5520002EF408 /* HydrometerApp.swift */,
+				E7BAA594305E5520002EF408 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		E7BAA598305E5520002EF408 /* Logic */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA596305E5520002EF408 /* HydrationGoalCalculator.swift */,
+				E7BAA597305E5520002EF408 /* StreakEngine.swift */,
+				E7BAA5DA305F2977002EF408 /* CoinRewards.swift */,
+				E7BAA5D0305F126C002EF408 /* ReminderPlanner.swift */,
+			);
+			path = Logic;
+			sourceTree = "<group>";
+		};
+		E7BAA59C305E5520002EF408 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA599305E5520002EF408 /* StreakRecord.swift */,
+				E7BAA59A305E5520002EF408 /* UserProfile.swift */,
+				E7BAA5DD305F2977002EF408 /* Cosmetics.swift */,
+				E7BAA59B305E5520002EF408 /* WaterLog.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E7BAA59F305E5520002EF408 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA59D305E5520002EF408 /* AuthService.swift */,
+				E7BAA59E305E5520002EF408 /* KeychainHelper.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		E7BAA5A2305E5520002EF408 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5A0305E5520002EF408 /* SmartCapManager.swift */,
+				E7BAA5A1305E5520002EF408 /* SmartCapProtocol.swift */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		E7BAA5A3305E5520002EF408 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA59F305E5520002EF408 /* Auth */,
+				E7BAA5A2305E5520002EF408 /* Bluetooth */,
+				E7BAA5D1305F126C002EF408 /* ReminderScheduler.swift */,
+				E7BAA5DE305F2977002EF408 /* ShopView.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E7BAA5A5305E5520002EF408 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5A4305E5520002EF408 /* Formatting.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		E7BAA5A7305E5520002EF408 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5A6305E5520002EF408 /* DashboardViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E7BAA5AE305E5520002EF408 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5A8305E5520002EF408 /* CapStatusIndicator.swift */,
+				E7BAA5A9305E5520002EF408 /* LogRowView.swift */,
+				E7BAA5AA305E5520002EF408 /* ProgressRingView.swift */,
+				E7BAA5AB305E5520002EF408 /* QuickAddBar.swift */,
+				E7BAA5D7305F2052002EF408 /* WaterBottleView.swift */,
+				E7BAA5DF305F2977002EF408 /* WeekStripView.swift */,
+				E7BAA5AC305E5520002EF408 /* SimulatorPanelView.swift */,
+				E7BAA5DB305F2977002EF408 /* CoinRewardView.swift */,
+				E7BAA5AD305E5520002EF408 /* StreakBadgeView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		E7BAA5B4305E5520002EF408 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5AF305E5520002EF408 /* DashboardView.swift */,
+				E7BAA5B0305E5520002EF408 /* HistoryView.swift */,
+				E7BAA5B1305E5520002EF408 /* OnboardingView.swift */,
+				E7BAA5B2305E5520002EF408 /* SettingsView.swift */,
+				E7BAA5B3305E5520002EF408 /* SignInView.swift */,
+				E7BAA5D2305F126C002EF408 /* ReminderSettingsView.swift */,
+				E7BAA5DC305F2977002EF408 /* CoinSoundPlayer.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E7BAA5B5305E5520002EF408 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5AE305E5520002EF408 /* Components */,
+				E7BAA5B4305E5520002EF408 /* Screens */,
+				E7640428306057C80078979A /* HydrationInsights.swift */,
+				E7640429306057C80078979A /* InsightsView.swift */,
+				E764043030605E810078979A /* BottleLevelCard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E7BAA5B6305E5520002EF408 /* Hydrometer */ = {
+			isa = PBXGroup;
+			children = (
+				E7BAA5CF305E562A002EF408 /* Info.plist */,
+				E7BAA595305E5520002EF408 /* App */,
+				E7BAA598305E5520002EF408 /* Logic */,
+				E7BAA59C305E5520002EF408 /* Models */,
+				E7BAA5A3305E5520002EF408 /* Services */,
+				E7BAA5A5305E5520002EF408 /* Utilities */,
+				E7BAA5A7305E5520002EF408 /* ViewModels */,
+				E7BAA5B5305E5520002EF408 /* Views */,
+				E764042C306059C40078979A /* CapAlerts.swift */,
+				E764042D306059C40078979A /* CapHealthBanner.swift */,
+				E7640432306061100078979A /* Friend.swift */,
+				E7640433306061100078979A /* FriendsView.swift */,
+				E764043630609DA10078979A /* BottleView.swift */,
+				E764043730609DA10078979A /* HomeStrips.swift */,
+				E764043830609DA10078979A /* MainTabView.swift */,
+				E764043C3060C2E00078979A /* GardenView.swift */,
+				E764043D3060C2E00078979A /* GrowingTreeView.swift */,
+				E764043E3060C2E00078979A /* TreeGrowth.swift */,
+			);
+			path = Hydrometer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E7BAA56A305E546D002EF408 /* Hydrometer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7BAA58A305E546E002EF408 /* Build configuration list for PBXNativeTarget "Hydrometer" */;
+			buildPhases = (
+				E7BAA567305E546D002EF408 /* Sources */,
+				E7BAA568305E546D002EF408 /* Frameworks */,
+				E7BAA569305E546D002EF408 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = Hydrometer;
+			productName = Hydrometer;
+			productReference = E7BAA56B305E546D002EF408 /* Hydrometer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E7BAA577305E546E002EF408 /* HydrometerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7BAA58D305E546E002EF408 /* Build configuration list for PBXNativeTarget "HydrometerTests" */;
+			buildPhases = (
+				E7BAA574305E546E002EF408 /* Sources */,
+				E7BAA575305E546E002EF408 /* Frameworks */,
+				E7BAA576305E546E002EF408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7BAA57A305E546E002EF408 /* PBXTargetDependency */,
+			);
+			name = HydrometerTests;
+			productName = HydrometerTests;
+			productReference = E7BAA578305E546E002EF408 /* HydrometerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E7BAA581305E546E002EF408 /* HydrometerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E7BAA590305E546E002EF408 /* Build configuration list for PBXNativeTarget "HydrometerUITests" */;
+			buildPhases = (
+				E7BAA57E305E546E002EF408 /* Sources */,
+				E7BAA57F305E546E002EF408 /* Frameworks */,
+				E7BAA580305E546E002EF408 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E7BAA584305E546E002EF408 /* PBXTargetDependency */,
+			);
+			name = HydrometerUITests;
+			productName = HydrometerUITests;
+			productReference = E7BAA582305E546E002EF408 /* HydrometerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E7BAA563305E546D002EF408 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					E7BAA56A305E546D002EF408 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					E7BAA577305E546E002EF408 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = E7BAA56A305E546D002EF408;
+					};
+					E7BAA581305E546E002EF408 = {
+						CreatedOnToolsVersion = 27.0;
+						TestTargetID = E7BAA56A305E546D002EF408;
+					};
+				};
+			};
+			buildConfigurationList = E7BAA566305E546D002EF408 /* Build configuration list for PBXProject "Hydrometer" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E7BAA562305E546D002EF408;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = E7BAA56C305E546D002EF408 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E7BAA56A305E546D002EF408 /* Hydrometer */,
+				E7BAA577305E546E002EF408 /* HydrometerTests */,
+				E7BAA581305E546E002EF408 /* HydrometerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E7BAA569305E546D002EF408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E7BAA576305E546E002EF408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+		E7BAA580305E546E002EF408 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E7BAA567305E546D002EF408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				E7BAA5B7305E5520002EF408 /* DashboardViewModel.swift in Sources */,
+				E7BAA5B8305E5520002EF408 /* SimulatorPanelView.swift in Sources */,
+				E7BAA5B9305E5520002EF408 /* ProgressRingView.swift in Sources */,
+				E7BAA5BA305E5520002EF408 /* SmartCapProtocol.swift in Sources */,
+				E7BAA5BB305E5520002EF408 /* DashboardView.swift in Sources */,
+				E7BAA5BC305E5520002EF408 /* Formatting.swift in Sources */,
+				E7BAA5D8305F2052002EF408 /* WaterBottleView.swift in Sources */,
+				E7BAA5BD305E5520002EF408 /* StreakBadgeView.swift in Sources */,
+				E764043130605E810078979A /* BottleLevelCard.swift in Sources */,
+				E7BAA5BE305E5520002EF408 /* SettingsView.swift in Sources */,
+				E7BAA5BF305E5520002EF408 /* RootView.swift in Sources */,
+				E7BAA5C0305E5520002EF408 /* UserProfile.swift in Sources */,
+				E764042A306057C80078979A /* HydrationInsights.swift in Sources */,
+				E764042B306057C80078979A /* InsightsView.swift in Sources */,
+				E7BAA5D3305F126C002EF408 /* ReminderSettingsView.swift in Sources */,
+				E7BAA5D4305F126C002EF408 /* ReminderPlanner.swift in Sources */,
+				E7BAA5D5305F126C002EF408 /* ReminderScheduler.swift in Sources */,
+				E7BAA5C1305E5520002EF408 /* StreakRecord.swift in Sources */,
+				E7BAA5C2305E5520002EF408 /* HistoryView.swift in Sources */,
+				E7BAA5C3305E5520002EF408 /* CapStatusIndicator.swift in Sources */,
+				E7BAA5C4305E5520002EF408 /* SignInView.swift in Sources */,
+				E7BAA5C5305E5520002EF408 /* SmartCapManager.swift in Sources */,
+				E7BAA5C6305E5520002EF408 /* StreakEngine.swift in Sources */,
+				E764042E306059C40078979A /* CapHealthBanner.swift in Sources */,
+				E764042F306059C40078979A /* CapAlerts.swift in Sources */,
+				E7640434306061100078979A /* Friend.swift in Sources */,
+				E7640435306061100078979A /* FriendsView.swift in Sources */,
+				E7BAA5E0305F2977002EF408 /* ShopView.swift in Sources */,
+				E7BAA5E1305F2977002EF408 /* CoinRewardView.swift in Sources */,
+				E7BAA5E2305F2977002EF408 /* CoinSoundPlayer.swift in Sources */,
+				E7BAA5E3305F2977002EF408 /* Cosmetics.swift in Sources */,
+				E7BAA5E4305F2977002EF408 /* CoinRewards.swift in Sources */,
+				E764043930609DA10078979A /* BottleView.swift in Sources */,
+				E764043F3060C2E00078979A /* GrowingTreeView.swift in Sources */,
+				E76404403060C2E00078979A /* TreeGrowth.swift in Sources */,
+				E76404413060C2E00078979A /* GardenView.swift in Sources */,
+				E764043A30609DA10078979A /* HomeStrips.swift in Sources */,
+				E764043B30609DA10078979A /* MainTabView.swift in Sources */,
+				E7BAA5E5305F2977002EF408 /* WeekStripView.swift in Sources */,
+				E7BAA5C7305E5520002EF408 /* AuthService.swift in Sources */,
+				E7BAA5C8305E5520002EF408 /* WaterLog.swift in Sources */,
+				E7BAA5C9305E5520002EF408 /* OnboardingView.swift in Sources */,
+				E7BAA5CA305E5520002EF408 /* HydrationGoalCalculator.swift in Sources */,
+				E7BAA5CB305E5520002EF408 /* HydrometerApp.swift in Sources */,
+				E7BAA5CC305E5520002EF408 /* KeychainHelper.swift in Sources */,
+				E7BAA5CD305E5520002EF408 /* QuickAddBar.swift in Sources */,
+				E7BAA5CE305E5520002EF408 /* LogRowView.swift in Sources */,
+			);
+		};
+		E7BAA574305E546E002EF408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+		E7BAA57E305E546E002EF408 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E7BAA57A305E546E002EF408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7BAA56A305E546D002EF408 /* Hydrometer */;
+			targetProxy = E7BAA579305E546E002EF408 /* PBXContainerItemProxy */;
+		};
+		E7BAA584305E546E002EF408 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E7BAA56A305E546D002EF408 /* Hydrometer */;
+			targetProxy = E7BAA583305E546E002EF408 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E7BAA588305E546E002EF408 /* Debug configuration for PBXProject "Hydrometer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E7BAA589305E546E002EF408 /* Release configuration for PBXProject "Hydrometer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E7BAA58B305E546E002EF408 /* Debug configuration for PBXNativeTarget "Hydrometer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hydrometer/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Hydrometer connects to your smart bottle cap to log every sip";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayden.Hydrometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E7BAA58C305E546E002EF408 /* Release configuration for PBXNativeTarget "Hydrometer" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Hydrometer/Info.plist;
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Hydrometer connects to your smart bottle cap to log every sip";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayden.Hydrometer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E7BAA58E305E546E002EF408 /* Debug configuration for PBXNativeTarget "HydrometerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayden.HydrometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydrometer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hydrometer";
+			};
+			name = Debug;
+		};
+		E7BAA58F305E546E002EF408 /* Release configuration for PBXNativeTarget "HydrometerTests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayden.HydrometerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hydrometer.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Hydrometer";
+			};
+			name = Release;
+		};
+		E7BAA591305E546E002EF408 /* Debug configuration for PBXNativeTarget "HydrometerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayden.HydrometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hydrometer;
+			};
+			name = Debug;
+		};
+		E7BAA592305E546E002EF408 /* Release configuration for PBXNativeTarget "HydrometerUITests" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jayden.HydrometerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Hydrometer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E7BAA566305E546D002EF408 /* Build configuration list for PBXProject "Hydrometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BAA588305E546E002EF408 /* Debug configuration for PBXProject "Hydrometer" */,
+				E7BAA589305E546E002EF408 /* Release configuration for PBXProject "Hydrometer" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E7BAA58A305E546E002EF408 /* Build configuration list for PBXNativeTarget "Hydrometer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BAA58B305E546E002EF408 /* Debug configuration for PBXNativeTarget "Hydrometer" */,
+				E7BAA58C305E546E002EF408 /* Release configuration for PBXNativeTarget "Hydrometer" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E7BAA58D305E546E002EF408 /* Build configuration list for PBXNativeTarget "HydrometerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BAA58E305E546E002EF408 /* Debug configuration for PBXNativeTarget "HydrometerTests" */,
+				E7BAA58F305E546E002EF408 /* Release configuration for PBXNativeTarget "HydrometerTests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		E7BAA590305E546E002EF408 /* Build configuration list for PBXNativeTarget "HydrometerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E7BAA591305E546E002EF408 /* Debug configuration for PBXNativeTarget "HydrometerUITests" */,
+				E7BAA592305E546E002EF408 /* Release configuration for PBXNativeTarget "HydrometerUITests" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E7BAA563305E546D002EF408 /* Project object */;
+	validationLevel = 1;
+}
