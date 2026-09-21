@@ -1,6 +1,3 @@
-# SASE-HACK-26
-Society of Asian Scientists &amp; Engineers Hackathon 2026.
-
 # Hydrometer
 
 **Hydration tracking that doesn't rely on you remembering.**
