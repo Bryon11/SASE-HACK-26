@@ -33,20 +33,15 @@ If selected to advance, the next phase is assembling and calibrating the physica
 ## Features
 
 **Core tracking**
-- Automatic water level sensing (no manual logging)
-- Drink and refill detection
-- Real-time sync to mobile app
-- Daily intake dashboard
+- Real-time water-level monitoring
+- Intelligent consumption and refill detection
+- Instant mobile app updates
+- Personalized daily hydration insights
 
 **Smart insights**
 - Drought window alerts (long gaps with no drinking)
 - Time-of-day and weekday/weekend pattern view
 - Consistency streaks, not just totals
-
-**Personalization (roadmap)**
-- Goals based on body weight and activity level
-- Weather-adjusted hydration targets
-- Athletic/performance mode
 
 ## Tech Stack
 
