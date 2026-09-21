@@ -2,7 +2,7 @@
 
 **Hydration tracking that doesn't rely on you remembering.**
 
-Hydrometer is a smart bottle cap that automatically tracks water intake using a Hall-effect sensor to detect the position of a magnetic float inside the bottle. Instead of manually logging drinks, the system senses real drinking behavior directly — converting water level changes into daily hydration insights delivered through a companion mobile app.
+Hydrometer is a smart bottle cap that automatically tracks water intake using Hall-effect sensors that track the magnetic field of a floating magnet inside the bottle. Instead of manually logging drinks, the system senses real drinking behavior directly — converting water level changes into daily hydration insights delivered through a companion mobile app.
 
 ---
 
@@ -15,8 +15,8 @@ Most people don't meet daily hydration recommendations, not because they don't c
 Hydrometer removes the need to remember by sensing hydration automatically:
 
 - A magnetic float rides on the water surface inside the bottle
-- A Hall-effect sensor detects the float's position in real time
-- An onboard microcontroller converts that position into a volume reading
+- A Hall-effect sensors detects the magnetic field of the magnet in the bottle, allowing to read the float position in real time
+- When water is removed, an onboard microcontroller converts that change position into a volume reading
 - An IMU filters out unreliable readings when the bottle is tilted or in motion
 - Drink and refill events are detected automatically and synced to a companion iOS app over Bluetooth
 
