@@ -2,13 +2,12 @@ import SwiftUI
 import UIKit
 
 enum CosmeticSlot: String, CaseIterable, Identifiable {
-    case cap, strap, bottle
+    case cap, bottle
     var id: String { rawValue }
 
     var title: String {
         switch self {
         case .cap: "Caps"
-        case .strap: "Straps"
         case .bottle: "Bottles"
         }
     }
@@ -30,7 +29,7 @@ struct CosmeticItem: Identifiable, Equatable, Hashable {
     var isStarter: Bool { price == 0 && streakRequirement == nil }
 }
 
-/// Every cap, strap and bottle in the shop. Edit names, colors and prices here.
+/// Every cap and bottle in the shop. Edit names, colors and prices here.
 enum CosmeticCatalog {
     static let caps: [CosmeticItem] = [
         CosmeticItem(id: "cap.stone", slot: .cap, name: "Stone", hex: "#8E959E", price: 0, streakRequirement: nil),
@@ -39,15 +38,6 @@ enum CosmeticCatalog {
         CosmeticItem(id: "cap.coral", slot: .cap, name: "Coral", hex: "#E86A5C", price: 15, streakRequirement: nil),
         CosmeticItem(id: "cap.chrome", slot: .cap, name: "Chrome", hex: "#C7CED6", price: 30, streakRequirement: nil),
         CosmeticItem(id: "cap.violet", slot: .cap, name: "Violet", hex: "#6C4CE0", price: 0, streakRequirement: 7)
-    ]
-
-    static let straps: [CosmeticItem] = [
-        CosmeticItem(id: "strap.red", slot: .strap, name: "Red", hex: "#E0393E", price: 0, streakRequirement: nil),
-        CosmeticItem(id: "strap.navy", slot: .strap, name: "Navy", hex: "#1F3B64", price: 10, streakRequirement: nil),
-        CosmeticItem(id: "strap.sun", slot: .strap, name: "Sun", hex: "#FFC93C", price: 10, streakRequirement: nil),
-        CosmeticItem(id: "strap.ink", slot: .strap, name: "Ink", hex: "#1B1F24", price: 10, streakRequirement: nil),
-        CosmeticItem(id: "strap.cloud", slot: .strap, name: "Cloud", hex: "#F4F6F8", price: 12, streakRequirement: nil),
-        CosmeticItem(id: "strap.pink", slot: .strap, name: "Pink", hex: "#FF5FA2", price: 0, streakRequirement: 14)
     ]
 
     static let bottles: [CosmeticItem] = [
@@ -59,12 +49,11 @@ enum CosmeticCatalog {
         CosmeticItem(id: "bottle.arctic", slot: .bottle, name: "Arctic", hex: "#CFF3FF", price: 0, streakRequirement: 30)
     ]
 
-    static var all: [CosmeticItem] { caps + straps + bottles }
+    static var all: [CosmeticItem] { caps + bottles }
 
     static func items(for slot: CosmeticSlot) -> [CosmeticItem] {
         switch slot {
         case .cap: caps
-        case .strap: straps
         case .bottle: bottles
         }
     }
@@ -78,27 +67,22 @@ enum CosmeticCatalog {
 struct BottleStyle: Equatable {
     let cap: Color
     let capBand: Color
-    let strap: Color
-    let strapAnchor: Color
     let body: Color
 
-    init(capHex: String, strapHex: String, bottleHex: String) {
+    init(capHex: String, bottleHex: String) {
         cap = Color(hex: capHex)
         capBand = Color(hex: capHex, darkenedBy: 0.75)
-        strap = Color(hex: strapHex)
-        strapAnchor = Color(hex: strapHex, darkenedBy: 0.78)
         body = Color(hex: bottleHex)
     }
 
-    init(cap: CosmeticItem?, strap: CosmeticItem?, bottle: CosmeticItem?) {
+    init(cap: CosmeticItem?, bottle: CosmeticItem?) {
         self.init(
             capHex: cap?.hex ?? "#8E959E",
-            strapHex: strap?.hex ?? "#E0393E",
             bottleHex: bottle?.hex ?? "#BDEBF7"
         )
     }
 
-    static let standard = BottleStyle(capHex: "#8E959E", strapHex: "#E0393E", bottleHex: "#BDEBF7")
+    static let standard = BottleStyle(capHex: "#8E959E", bottleHex: "#BDEBF7")
 }
 
 extension Color {

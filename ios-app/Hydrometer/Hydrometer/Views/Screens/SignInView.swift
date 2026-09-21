@@ -15,14 +15,14 @@ struct SignInView: View {
     private let slides: [(title: String, subtitle: String)] = [
         ("Every sip, counted", "Twist your smart cap and Hydrometer logs it for you."),
         ("Build a streak", "Hit your goal each day and watch your week fill up."),
-        ("Earn coins", "Spend them on new caps, straps and bottles.")
+        ("Earn coins", "Spend them on new caps and bottle colors.")
     ]
 
     private var heroProgress: Double { [0.55, 0.8, 1.0][page] }
 
     private var heroStyle: BottleStyle {
         page == 2
-            ? BottleStyle(capHex: "#F5B82E", strapHex: "#E0393E", bottleHex: "#BDEBF7")
+            ? BottleStyle(capHex: "#F5B82E", bottleHex: "#BDEBF7")
             : .standard
     }
 

@@ -1,7 +1,7 @@
 import SwiftUI
 import UIKit
 
-/// Spend coins on caps, straps and bottles. Tapping an item tries it on the preview bottle.
+/// Spend coins on caps and bottles. Tapping an item tries it on the preview bottle.
 struct ShopView: View {
     let viewModel: DashboardViewModel
     /// The sheet version keeps a Done button; the tab version doesn't need one.
@@ -17,7 +17,6 @@ struct ShopView: View {
         self.showsDone = showsDone
         _previewIDs = State(initialValue: [
             .cap: viewModel.profile.equippedCapID,
-            .strap: viewModel.profile.equippedStrapID,
             .bottle: viewModel.profile.equippedBottleID
         ])
     }
@@ -29,11 +28,11 @@ struct ShopView: View {
     private var selected: CosmeticItem? { previewItem(slot) }
 
     private var previewStyle: BottleStyle {
-        BottleStyle(cap: previewItem(.cap), strap: previewItem(.strap), bottle: previewItem(.bottle))
+        BottleStyle(cap: previewItem(.cap), bottle: previewItem(.bottle))
     }
 
     private var previewLabel: String {
-        [previewItem(.cap), previewItem(.strap), previewItem(.bottle)]
+        [previewItem(.cap), previewItem(.bottle)]
             .compactMap { $0?.displayName }
             .joined(separator: " · ")
     }

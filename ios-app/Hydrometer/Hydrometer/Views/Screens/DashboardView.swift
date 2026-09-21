@@ -52,6 +52,11 @@ struct DashboardView: View {
 
                     statTiles
 
+                    TreeCard(lifetimeOunces: viewModel.lifetimeOunces,
+                             todayTotal: viewModel.todayTotal) {
+                        onSelectTab(.tree)
+                    }
+
                     DayTimelineCard(logs: viewModel.todayLogs)
 
                     FriendsStripCard(
@@ -193,6 +198,28 @@ struct DashboardView: View {
         ScrollView {
             VStack(spacing: 14) {
                 SimulatorPanelView(cap: viewModel.cap)
+
+                VStack(alignment: .leading, spacing: 12) {
+                    Label("Add water by hand (test)", systemImage: "drop.fill")
+                        .font(.headline)
+                    HStack {
+                        Button("+4 oz") { viewModel.addTestWater(4) }
+                        Button("+8 oz") { viewModel.addTestWater(8) }
+                        Button("+16 oz") { viewModel.addTestWater(16) }
+                    }
+                    .buttonStyle(.bordered)
+                    .tint(Color.sipOcean)
+
+                    Button("Grow tree +250 oz") { viewModel.addTreeWaterForDemo(250) }
+                        .buttonStyle(.bordered)
+                        .tint(.green)
+                    Text("These log water as if you typed it in. The tree button back-dates it, so only the tree grows.")
+                        .font(.caption)
+                        .foregroundStyle(.secondary)
+                }
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color(.secondarySystemGroupedBackground), in: RoundedRectangle(cornerRadius: 20))
 
                 VStack(alignment: .leading, spacing: 12) {
                     Label("Rewards", systemImage: "dollarsign.circle")

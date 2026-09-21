@@ -1,13 +1,14 @@
 import SwiftUI
 
 enum HydroTab: String, CaseIterable, Identifiable {
-    case home, bottle, insights, friends, shop
+    case home, bottle, tree, insights, friends, shop
     var id: String { rawValue }
 
     var title: String {
         switch self {
         case .home: "Home"
         case .bottle: "Bottle"
+        case .tree: "Tree"
         case .insights: "Insights"
         case .friends: "Friends"
         case .shop: "Shop"
@@ -19,6 +20,7 @@ enum HydroTab: String, CaseIterable, Identifiable {
         switch self {
         case .home: "house.fill"
         case .bottle: "drop.fill"
+        case .tree: "tree.fill"
         case .insights: "chart.line.uptrend.xyaxis"
         case .friends: "person.2.fill"
         case .shop: "bag.fill"
@@ -44,6 +46,11 @@ struct MainTabView: View {
                 case .bottle:
                     NavigationStack {
                         BottleView(viewModel: viewModel)
+                            .tabBarRoom()
+                    }
+                case .tree:
+                    NavigationStack {
+                        GardenView(viewModel: viewModel)
                             .tabBarRoom()
                     }
                 case .insights:

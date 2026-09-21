@@ -398,23 +398,9 @@ struct WaveShape: Shape {
     }
 }
 
-/// The strap loop that rises from the top of the cap and hangs off to the right.
-struct CapStrapShape: Shape {
-    func path(in rect: CGRect) -> Path {
-        var p = Path()
-        p.move(to: CGPoint(x: rect.midX + rect.width * 0.04, y: rect.minY + rect.height * 0.05))
-        p.addCurve(
-            to: CGPoint(x: rect.maxX + rect.width * 0.3, y: rect.minY + rect.height * 0.18),
-            control1: CGPoint(x: rect.midX + rect.width * 0.18, y: rect.minY - rect.height * 0.55),
-            control2: CGPoint(x: rect.maxX + rect.width * 0.18, y: rect.minY - rect.height * 0.6)
-        )
-        return p
-    }
-}
-
 // MARK: - Cap
 
-/// Screw cap with grip ridges and a strap. Opening slides the ridges (a twist),
+/// Screw cap with grip ridges. Opening slides the ridges (a twist),
 /// then lifts and tips the cap off; closing reverses it.
 struct TwistCapView: View {
     let isOpen: Bool
@@ -426,15 +412,7 @@ struct TwistCapView: View {
         GeometryReader { geo in
             let w = geo.size.width
             let h = geo.size.height
-            ZStack {
-                CapStrapShape()
-                    .stroke(style.strap, style: StrokeStyle(lineWidth: h * 0.26, lineCap: .round))
-                capBody(width: w, height: h)
-                Ellipse()
-                    .fill(style.strapAnchor)
-                    .frame(width: w * 0.2, height: h * 0.16)
-                    .position(x: w / 2 + w * 0.04, y: h * 0.04)
-            }
+            capBody(width: w, height: h)
         }
         .rotationEffect(.degrees(lifted ? -16 : 0), anchor: .bottomLeading)
         .offset(x: lifted ? 10 : 0, y: lifted ? -20 : 0)

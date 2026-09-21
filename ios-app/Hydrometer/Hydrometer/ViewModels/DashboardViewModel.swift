@@ -13,6 +13,8 @@ final class DashboardViewModel {
     private(set) var todayLogs: [WaterLog] = []
     private(set) var weekDays: [WeekDayStatus] = []
     private(set) var insights = HydrationInsights()
+    /// Every ounce ever logged — this is what grows the tree.
+    private(set) var lifetimeOunces: Double = 0
     private(set) var friends: [Friend] = []
     private(set) var groupStreak = 0
     /// Increments each time the goal is crossed.
@@ -143,7 +145,6 @@ final class DashboardViewModel {
     var bottleStyle: BottleStyle {
         BottleStyle(
             cap: CosmeticCatalog.item(id: profile.equippedCapID),
-            strap: CosmeticCatalog.item(id: profile.equippedStrapID),
             bottle: CosmeticCatalog.item(id: profile.equippedBottleID)
         )
     }
@@ -202,6 +203,7 @@ final class DashboardViewModel {
         cap.setSimulatedCapacity(profile.bottleCapacityOz)
         weekDays = computeWeek(now: now)
         insights = computeInsights(now: now)
+        lifetimeOunces = computeLifetimeOunces()
         refreshFriends(now: now)
         rescheduleReminders(now: now)
     }
@@ -241,6 +243,22 @@ final class DashboardViewModel {
         save()
     }
 
+    /// Test control: log water by hand without the cap.
+    func addTestWater(_ ounces: Double) {
+        logWater(ounces, source: .manual)
+    }
+
+    /// Test control: pour straight into the tree. Dated well in the past so it
+    /// grows the tree without touching today's total, streak or insights.
+    func addTreeWaterForDemo(_ ounces: Double) {
+        let calendar = Calendar.current
+        guard let past = calendar.date(byAdding: .day, value: -60, to: .now) else { return }
+        context.insert(WaterLog(ownerID: profile.appleUserID, amountOz: ounces,
+                                timestamp: past, source: .manual))
+        save()
+        refresh()
+    }
+
     func addDemoCoins(_ amount: Int) {
         profile.coins += amount
         save()
@@ -255,7 +273,6 @@ final class DashboardViewModel {
     func isEquipped(_ item: CosmeticItem) -> Bool {
         switch item.slot {
         case .cap: profile.equippedCapID == item.id
-        case .strap: profile.equippedStrapID == item.id
         case .bottle: profile.equippedBottleID == item.id
         }
     }
@@ -273,7 +290,6 @@ final class DashboardViewModel {
         guard isOwned(item) else { return }
         switch item.slot {
         case .cap: profile.equippedCapID = item.id
-        case .strap: profile.equippedStrapID = item.id
         case .bottle: profile.equippedBottleID = item.id
         }
         save()
@@ -318,6 +334,14 @@ final class DashboardViewModel {
                 isFuture: dayStart > today
             )
         }
+    }
+
+    /// Total of every log this user has, used by the tree.
+    private func computeLifetimeOunces() -> Double {
+        let owner = profile.appleUserID
+        let descriptor = FetchDescriptor<WaterLog>(predicate: #Predicate { $0.ownerID == owner })
+        let logs = (try? context.fetch(descriptor)) ?? []
+        return logs.reduce(0) { $0 + $1.amountOz }
     }
 
     // MARK: Friends & the group streak

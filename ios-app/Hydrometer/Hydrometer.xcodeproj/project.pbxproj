@@ -17,6 +17,9 @@
 		E764043930609DA10078979A /* BottleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043630609DA10078979A /* BottleView.swift */; };
 		E764043A30609DA10078979A /* HomeStrips.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043730609DA10078979A /* HomeStrips.swift */; };
 		E764043B30609DA10078979A /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043830609DA10078979A /* MainTabView.swift */; };
+		E764043F3060C2E00078979A /* GrowingTreeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043D3060C2E00078979A /* GrowingTreeView.swift */; };
+		E76404403060C2E00078979A /* TreeGrowth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043E3060C2E00078979A /* TreeGrowth.swift */; };
+		E76404413060C2E00078979A /* GardenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E764043C3060C2E00078979A /* GardenView.swift */; };
 		E7BAA5B7305E5520002EF408 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5A6305E5520002EF408 /* DashboardViewModel.swift */; };
 		E7BAA5B8305E5520002EF408 /* SimulatorPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AC305E5520002EF408 /* SimulatorPanelView.swift */; };
 		E7BAA5B9305E5520002EF408 /* ProgressRingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BAA5AA305E5520002EF408 /* ProgressRingView.swift */; };
@@ -81,6 +84,9 @@
 		E764043630609DA10078979A /* BottleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottleView.swift; sourceTree = "<group>"; };
 		E764043730609DA10078979A /* HomeStrips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStrips.swift; sourceTree = "<group>"; };
 		E764043830609DA10078979A /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		E764043C3060C2E00078979A /* GardenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GardenView.swift; sourceTree = "<group>"; };
+		E764043D3060C2E00078979A /* GrowingTreeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrowingTreeView.swift; sourceTree = "<group>"; };
+		E764043E3060C2E00078979A /* TreeGrowth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeGrowth.swift; sourceTree = "<group>"; };
 		E7BAA56B305E546D002EF408 /* Hydrometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hydrometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BAA578305E546E002EF408 /* HydrometerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrometerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BAA582305E546E002EF408 /* HydrometerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HydrometerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -294,6 +300,9 @@
 				E764043630609DA10078979A /* BottleView.swift */,
 				E764043730609DA10078979A /* HomeStrips.swift */,
 				E764043830609DA10078979A /* MainTabView.swift */,
+				E764043C3060C2E00078979A /* GardenView.swift */,
+				E764043D3060C2E00078979A /* GrowingTreeView.swift */,
+				E764043E3060C2E00078979A /* TreeGrowth.swift */,
 			);
 			path = Hydrometer;
 			sourceTree = "<group>";
@@ -451,6 +460,9 @@
 				E7BAA5E3305F2977002EF408 /* Cosmetics.swift in Sources */,
 				E7BAA5E4305F2977002EF408 /* CoinRewards.swift in Sources */,
 				E764043930609DA10078979A /* BottleView.swift in Sources */,
+				E764043F3060C2E00078979A /* GrowingTreeView.swift in Sources */,
+				E76404403060C2E00078979A /* TreeGrowth.swift in Sources */,
+				E76404413060C2E00078979A /* GardenView.swift in Sources */,
 				E764043A30609DA10078979A /* HomeStrips.swift in Sources */,
 				E764043B30609DA10078979A /* MainTabView.swift in Sources */,
 				E7BAA5E5305F2977002EF408 /* WeekStripView.swift in Sources */,
